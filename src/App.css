@@ -1,0 +1,69 @@
+.App {
+	text-align: center;
+}
+.App-header {
+	background-color: #a4508b;
+	background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+	height: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 8rem;
+	color: #e4a9a9;
+	pointer-events: none;
+}
+
+iframe {
+	border-bottom: 1px solid white;
+}
+
+.prayerTime h1 {
+	font-size: 3.5rem;
+	font-weight: 900;
+	color: #dba4a4;
+}
+.timer {
+	font-size: 2rem;
+	font-weight: 900;
+	color: #e4a9a9;
+}
+
+.timer h1 {
+	font-size: 4.5rem;
+	color: #e25933;
+	font-weight: 1000;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	color: #e4a9a9;
+}
+
+td,
+th {
+	text-align: left;
+	padding-left: 5rem;
+	padding-right: 5rem;
+	padding-bottom: 0.3rem;
+}
+
+th {
+	padding-top: 3rem;
+	border-bottom: 1px solid white;
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+td {
+	font-size: 2.5rem;
+}
+
+p {
+	font-size: 0.8rem;
+}

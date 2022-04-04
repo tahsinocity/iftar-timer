@@ -1,0 +1,150 @@
+.container-m {
+	background-color: #a4508b;
+	background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+	height: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: calc(20px + 2vmin);
+	color: #e66f4e;
+	pointer-events: none;
+}
+.neonText {
+	color: #fff;
+	text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+		0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+	animation: flicker 2s infinite alternate;
+}
+@keyframes flicker {
+	0%,
+	18%,
+	22%,
+	25%,
+	53%,
+	57%,
+	100% {
+		text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
+			0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+	}
+
+	20%,
+	24%,
+	55% {
+		text-shadow: none;
+	}
+}
+.glow {
+	font-size: 1.6em;
+	color: #fff;
+	text-align: center;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+			0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+	}
+
+	to {
+		text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+			0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+	}
+}
+
+.second-container-m {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+}
+.timer-m {
+	border: 1px solid #710f9e;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+		0 100px 80px rgba(0, 0, 0, 0.12);
+	padding: 0.5em;
+	border-radius: 10px;
+	margin-bottom: 2rem;
+	font-size: 2rem;
+	font-weight: 900;
+	color: #e4a9a9;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.timer-box-m {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Akronim);
+
+.fire {
+	margin: 50px auto;
+	width: 80%;
+	max-width: 1000px;
+	height: 200px;
+
+	background-position: center center;
+	background-size: 1000px 200px;
+	border-radius: 10px;
+
+	overflow: hidden;
+	text-align: center;
+	vertical-align: middle;
+}
+.fire:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.Blazing {
+	display: inline-block;
+	margin: 0;
+
+	color: rgb(255, 115, 0);
+	font-size: 1.6em;
+	line-height: 1;
+	min-width: 50px;
+	outline: none;
+	vertical-align: middle;
+
+	text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange,
+		4px -5px 6px yellow, -4px -10px 10px yellow, 0 -10px 30px yellow;
+	animation: 2s Blazing infinite alternate linear;
+}
+
+@keyframes Blazing {
+	0% {
+		text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange, 0 0 0 yellow,
+			0 0 5px yellow, -2px -5px 5px yellow, 4px -10px 10px yellow;
+	}
+	25% {
+		text-shadow: 0 3px 20px red, 0 0 30px red, 0 0 20px orange, 0 0 5px yellow,
+			-2px -5px 5px yellow, 3px -10px 10px yellow, -4px -15px 20px yellow;
+	}
+	50% {
+		text-shadow: 0 3px 20px red, 0 0 20px red, 0 -5px 10px orange,
+			-2px -5px 5px yellow, 3px -10px 10px yellow, -4px -15px 20px yellow,
+			2px -20px 30px rgba(255, 255, 0, 0.5);
+	}
+	75% {
+		text-shadow: 0 3px 20px red, 0 0 20px red, 0 -5px 10px orange,
+			3px -5px 5px yellow, -4px -10px 10px yellow,
+			2px -20px 30px rgba(255, 255, 0, 0.5), 0px -25px 40px rgba(255, 255, 0, 0);
+	}
+	100% {
+		text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange, 0 0 0 yellow,
+			0 0 5px yellow, -2px -5px 5px yellow, 4px -10px 10px yellow;
+	}
+}

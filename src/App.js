@@ -79,10 +79,7 @@ function App() {
           </div>
         </div>
       )}
-      <h2>
-        Made with ❤️ by{" "}
-        <a href={"https://github.com/tahsinocity/iftar-timer"}>tahsinocity</a>
-      </h2>
+      <h2>Made with ❤️ by tahsinocity</h2>
     </div>
   );
 }

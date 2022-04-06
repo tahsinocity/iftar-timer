@@ -1,5 +1,5 @@
 {
-  "name": "personal-site-2",
+  "name": "iftar-time",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,7 +8,6 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.26.1",
     "dotenv": "^8.2.0",
-    "ga-4-react": "^0.1.281",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",

@@ -1,38 +1,46 @@
-import React from 'react';
+import React from "react";
 
 const { useEffect, useState } = React;
 
 function Timer({ eventTime }) {
-	const [currentTime, setCurrentTime] = useState(
-		Date.parse(new Date().toUTCString())
-	);
+  const [currentTime, setCurrentTime] = useState(new Date().getTime());
 
-	const timeBetween = eventTime - currentTime;
-	const seconds = Math.floor((timeBetween / 1000) % 60);
-	const minutes = Math.floor((timeBetween / 1000 / 60) % 60);
-	const hours = Math.floor((timeBetween / (1000 * 60 * 60)) % 24);
+  const timeBetween = new Date(eventTime).getTime() - currentTime;
 
-	useEffect(() => {
-		const interval = setInterval(() => {
-			setCurrentTime(Date.parse(new Date().toUTCString()));
-		}, 1000);
+  // console.log({
+  //   eventTime: new Date(eventTime).getTime(),
+  //   currentTime,
+  //   timeBetween,
+  // });
+  const seconds = Math.floor((timeBetween / 1000) % 60);
+  const minutes = Math.floor((timeBetween / 1000 / 60) % 60);
+  const hours = Math.floor((timeBetween / (1000 * 60 * 60)) % 24);
 
-		return () => clearInterval(interval);
-	}, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTime(new Date().getTime());
+    }, 1000);
 
-	return (
-		<div className="timer">
-			{timeBetween < 0 ? null : (
-				<>
-					<h2>Time remaining till Iftaar:</h2>
-					<h1>
-						{hours} hrs {minutes < 10 ? `0${minutes}` : minutes} mins{' '}
-						{seconds < 10 ? `0${seconds}` : seconds} secs
-					</h1>
-				</>
-			)}
-		</div>
-	);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="timer">
+      {timeBetween < 0 ? (
+        <>
+          <h2>Timer will start on the next fasting day</h2>
+        </>
+      ) : (
+        <>
+          <h2>Time remaining till Iftar:</h2>
+          <h1>
+            {hours} hrs {minutes < 10 ? `0${minutes}` : minutes} mins{" "}
+            {seconds < 10 ? `0${seconds}` : seconds} secs
+          </h1>
+        </>
+      )}
+    </div>
+  );
 }
 
 export default Timer;

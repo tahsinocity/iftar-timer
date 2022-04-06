@@ -32,7 +32,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading("Please ensure you have enabled location on your device.");
-    }, 2000);
+    }, 3000);
     return () => clearTimeout(timer);
   });
 
@@ -79,7 +79,16 @@ function App() {
           </div>
         </div>
       )}
-      <h2>Made with ❤️ by tahsinocity</h2>
+      <h2>
+        Made with ❤️ by{" "}
+        <a
+          href="https://github.com/tahsinocity/iftar-timer"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          tahsinocity
+        </a>
+      </h2>
     </div>
   );
 }

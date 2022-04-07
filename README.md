@@ -5,5 +5,5 @@ Check out the live app at: https://iftartimer.netlify.app/
 
 ### App dynamically uses user location to display prayer times:
 
-<img width="389" alt="Screen Shot 2022-04-06 at 3 41 18 PM" src="https://user-images.githubusercontent.com/38715905/162125815-38fcf6a8-6e66-4658-8cc1-dc3a8ac2b223.png">
+<img width="388" alt="Screen Shot 2022-04-07 at 1 22 12 AM" src="https://user-images.githubusercontent.com/38715905/162125952-58fdf8ac-cc2f-486e-b6f3-a5693da90036.png">
 
